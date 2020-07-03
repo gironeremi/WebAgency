@@ -1,0 +1,674 @@
+body
+{
+	font-family: "Roboto", sans-serif;
+}
+/*
+************************
+
+******   HEADER   ******
+
+************************
+*/
+header
+{
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 5;
+}
+nav
+{
+	height: 100%;
+}
+nav a
+{
+	text-decoration: none;
+	color: #000000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+header ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+#accueil
+{
+	border-top: 4px solid #3491b2;	
+}
+header li
+{
+	height: 100%;
+	padding: 0em 1.3em;
+	font-size: 0.8em;
+	border-top: 4px solid #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+header li:hover
+{
+	border-top: 4px solid #3491b2;
+}
+/*
+************************
+
+******   SLIDER   ******
+
+************************
+*/
+#slider
+{
+	background-image: url("images/slider/bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	box-shadow: 0px -4px 0px rgba(211,211,211,0.3) inset;
+}
+#fg
+{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	overflow: hidden;
+}
+#fleche_gauche
+{
+	text-align: left;
+	font-size: 1.2em;
+	padding: 15px 10px 15px 20px;
+	border-top-right-radius: 50%; 
+	border-bottom-right-radius: 50%;
+	margin-left: -15px;
+	background-color: rgba(0,0,0,0.3);
+}
+#barre_bottom
+{
+	content: "";
+	height: 4px;
+	width: 100%;
+	background-color: #5cadd3;
+	align-self: flex-end;
+}
+h1
+{
+	font-weight: bolder;
+	font-size: 1.9em;
+}
+span
+{
+	color: #5cadd3;
+}
+#slogan
+{
+	flex: 7;
+	padding: 120px 0;
+	text-align: left;
+}
+#slogan2
+{
+	font-size: 0.8em;
+}
+.bouton
+{
+	color: white;
+	background-color: #5cadd3;
+	border-bottom: 4px solid #4494bb;
+	font-size: 0.9em;
+	width: 6.5em;
+	height: 2.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
+#fd
+{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	overflow: hidden;
+}
+#fleche_droite
+{
+	text-align: right;
+	font-size: 1.2em;
+	text-align: left;
+	padding: 15px 20px 15px 10px;
+	border-top-left-radius: 50%; 
+	border-bottom-left-radius: 50%;
+	margin-right: -15px;
+	background-color: rgba(0,0,0,0.3);
+}
+/*
+**************************
+
+******   SERVICES   ******
+
+**************************
+*/
+.serpro
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+h2
+{
+	font-size: 2em;
+	padding-top: 30px;
+	text-align: center;
+	margin: 0;
+}
+.rond_bleu
+{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	align-self: center;
+	border: 5px solid white;
+	background-color: #5cadd3;
+	border-radius: 50%;
+}
+.rond_bleu:before
+{
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	left: -105px;
+	width: 100px;
+	border-bottom: 2px solid #ebebeb;
+}
+.rond_bleu:after
+{
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	left: 20px;
+	width: 100px;
+	border-bottom: 2px solid #ebebeb;
+}
+
+#description
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#mainfeature
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1;
+}
+#definitions
+{
+	flex: 1;
+
+}
+.icones
+{
+	display: flex;
+	align-items: center;
+}
+.icones i
+{
+	font-size: 1.5em;
+	color: #5cadd3;
+	padding: 15px;
+	border: 2px lightgrey solid;
+	border-radius: 50%;
+}
+.petit_rond_bleu
+{
+	position: relative;
+	left: -12px;
+	width: 14px;
+	height: 14px;
+	border: 3px solid white;
+	background-color: #5cadd3;
+	border-radius: 50%
+}
+#ux_design
+{
+	display: flex;
+	align-items: center;
+}
+#ui_design
+{
+	display: flex;
+	align-items: center;
+}
+#seo
+{
+	display: flex;
+	align-items: center;
+}
+/*
+*************************
+
+******   PROJETS   ******
+
+*************************
+*/
+#projets
+{
+	background-color: #f5f5f5;
+}
+#menu_projets
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+#allworks
+{
+	font-size: 0.9em;
+	color: white;
+	background-color: #5cadd3;
+	position: relative;
+	padding: 10px 15px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom: 3px solid #468cad;
+}
+#fleche1
+{
+	position: absolute;
+	font-size: 1.5em;
+	color: #468cad;
+	bottom: -16px;
+	left: 38px;	
+}
+#fleche2
+{
+	position: absolute;
+	font-size: 1.5em;
+	color: #468cad;
+	opacity: 0;
+	bottom: -16px;
+	left: 34px;
+}
+#fleche3
+{
+	position: absolute;
+	font-size: 1.5em;
+	color: #468cad;
+	opacity: 0;
+	bottom: -16px;
+	left: 40px;
+}
+#fleche4
+{
+	position: absolute;
+	font-size: 1.5em;
+	color: #468cad;
+	opacity: 0;
+	bottom: -16px;
+	left: 37px;
+}
+#creative
+{
+	font-size: 0.9em;
+	background-color: #e5e5e5;
+	position: relative;
+	padding: 10px 15px;
+	border-bottom: 3px solid #e5e5e5;
+}
+#corporate
+{
+	font-size: 0.9em;
+	background-color: #e5e5e5;
+	position: relative;
+	padding: 10px 15px;
+	border-bottom: 3px solid #e5e5e5;
+}
+#portfolio
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: relative;
+	font-size: 0.9em;
+	background-color: #e5e5e5;
+	padding: 10px 15px;
+}
+#creative:hover
+{
+	color: white;
+	background-color: #5cadd3;
+	border-bottom: 3px solid #468cad;
+}
+#creative:hover #fleche2
+{
+	opacity: 1;
+}
+#corporate:hover
+{
+	color: white;
+	background-color: #5cadd3;
+	border-bottom: 3px solid #468cad;
+	opacity: 1;
+}
+#corporate:hover #fleche3
+{
+	opacity: 1;
+}
+#portfolio:hover
+{
+	color: white;
+	background-color: #5cadd3;
+	border-bottom: 3px solid #468cad;
+	opacity: 1;
+}
+#portfolio:hover #fleche4
+{
+	opacity: 1;
+}
+/*
+*********************************
+
+******   GALERIE PROJETS   ******
+
+*********************************
+*/
+#galerie
+{
+	margin: 5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+
+}
+figure
+{
+	margin: 0.2em;
+	min-width: 20%;
+	max-width: 24%;
+	position: relative;
+	overflow: hidden;
+}
+figure img
+{
+	width: 100%;
+}
+figcaption
+{
+	display: none;
+	position: absolute;
+	width: 100%;
+	bottom: 4px;
+	padding-left: 3px;
+	font-size: 0.8em;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+figcaption i
+{
+	position: absolute;
+	right: 1em;
+	top: -1.4em;
+	border: 1px solid yellow;
+	background-color: #5cadd3;
+	font-size: 1.1em;
+	padding: 0.8em;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.portfolio_name
+{
+	font-weight: bold;
+	margin: 0;
+	font-size: 1.2em;
+}
+figure:hover figcaption
+{
+	display: block;
+}
+/*
+*************************
+
+******   CONTACT   ******
+
+*************************
+*/
+#contact
+{
+	font-size: 0.8em;
+	position: relative;
+}
+iframe
+{
+	margin: auto;
+	position: absolute;
+	width: 99%;
+	height: 600px;
+	border: 0;
+	opacity: 0.4;
+}
+#bleu
+{
+	position: absolute;
+	width: 99%;
+	height: 600px;
+	background-color: rgb(92,173,211); /*#5cadd3 mais en valeur rgba*/
+	z-index: -1;
+	top: 0;
+}
+#contact_info
+{
+	position: absolute;
+	background-color: #f5f5f5;
+	width: 300px;
+	top: 45px;
+	right: 100px;
+	padding: 10px;
+	opacity: 0.8;
+}
+#contact h3
+{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+#contact span
+{
+	font-weight: bold;
+	color: #000000;
+}
+input
+{
+	width: 95%;
+	padding: 5px;
+}
+textarea
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	width: 95%;
+	padding: 5px;
+	height: 100px;
+	color: grey;
+}
+#envoyer
+{
+	color: white;
+	background-color: #5cadd3;
+	border-bottom: 4px solid #4494bb;
+	width: 125px;
+	height:45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	opacity: 1;
+}
+/*
+************************************************************
+
+
+********************     RESPONSIVE     ********************
+
+
+************************************************************
+*/
+/*
+************************
+******   HEADER   ******
+************************
+*/
+@media all and (max-width: 600px)
+{
+	header
+	{
+		flex-direction: column;
+		height: auto;
+	}	
+	header ul
+	{
+		width: 99%;
+		margin: 0;
+	}
+	#accueil
+	{
+		border-top: 4px solid #FFFFFF;
+		border-bottom: 4px solid #3491b2;
+	}
+	header li
+	{
+		padding: 0.5em;
+		border-bottom: 4px solid #FFFFFF;
+	}
+	header li:hover
+	{
+		border-top: 4px solid #FFFFFF;
+		border-bottom: 4px solid #3491b2;
+	}
+}
+/*
+**************************
+******   SERVICES   ******
+**************************
+*/
+@media all and (max-width: 1000px)
+{
+	#description
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media all and (max-width: 360px)
+{
+	#description img
+	{
+		width: 100%;
+	}
+}
+/*
+*************************
+******   PROJETS   ******
+*************************
+*/
+@media all and (max-width: 380px)
+{
+	#allworks, #creative, #corporate, #portfolio
+	{
+    	padding: 8px;
+    	font-size: 0.8em;
+	}
+	#fleche1
+	{
+		bottom: -14px;
+		left: 30px;
+	}
+	#fleche2
+	{
+		bottom: -14px;
+		left: 24px;
+	}
+	#fleche3
+	{
+		bottom: -14px;
+		left: 30px;
+	}
+	#fleche4
+	{
+		bottom: -14px;
+		left: 26px;
+	}
+}
+@media all and (max-width: 1024px)
+{
+	figure
+	{
+		min-width: 25%;
+		max-width: 32%;
+	}	
+}
+@media all and (max-width: 768px)
+{
+	figure
+	{
+		min-width: 33%;
+		max-width: 48%;
+	}
+}
+@media all and (max-width: 520px)
+{
+	#galerie
+	{
+		flex-direction: column;
+	}
+	figure
+	{
+		min-width: 99%;
+		max-width: 99%;
+	}
+}
+/*
+*************************
+******   CONTACT   ******
+*************************
+*/
+@media all and (max-width: 760px)
+{
+	iframe
+	{
+		position: relative;
+	}
+	#contact_info
+	{
+		position: static;
+    	width: 98%;
+    	top: 0;
+    	right: 0;
+    	margin: 0;
+    	padding: 0;
+    	opacity: 1;
+  	}
+}
